@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>About villages</title>
+</head>
+
+<body>
+<table>
+{% for place in places %}
+
+<tr>
+<td>{{places.index(place)}}</td>
+<td>{{place.place}}</td>
+<td>{{place.about}}</td>
+<td>{{place.nearest_city}}</td>
+</tr>
+{% endfor %}
+
+</table>
+</body>
+</html>
+
